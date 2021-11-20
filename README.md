@@ -16,4 +16,6 @@ The data were sourced from the following sources:
 
 ## Data cleaning
 
-The data were cleaned in our [eda repository](https://github.com/Data-Analytics-Project-2021/eda) and are stored under `datasets/`.
+The data were cleaned in our [eda repository](https://github.com/Data-Analytics-Project-2021/eda) and are stored under `cleaned_datasets/`.
+
+The raw sourced data are store in `raw_datasets/`.
