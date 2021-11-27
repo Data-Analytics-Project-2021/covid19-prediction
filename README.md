@@ -19,3 +19,42 @@ The data were sourced from the following sources:
 The data were cleaned in our [eda repository](https://github.com/Data-Analytics-Project-2021/eda) and are stored under `cleaned_datasets/`.
 
 The raw sourced data are store in `raw_datasets/`.
+
+## Docker
+
+### Development
+
+To develop/maintain code use the following steps to setup your environment.
+
+#### Docker Container
+
+1. To build the docker dev image run the following command
+
+```
+docker-compose up
+```
+
+2. Next use the following command to start up the dev docker container.
+
+```
+docker run --gpus all -it --rm -p 8888:8888 -v $PWD:/covid19-prediction covid19-prediction_dev
+```
+
+#### Jupyter Notebook
+
+Once the container is up and running use the following code to launch jupyter notebooks.
+
+```
+jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+```
+
+#### Debugging Errors
+
+1. error checking context: 'can't stat 'error checking context: 'can't stat '...error checking context: 'can't stat'
+
+Solution
+```
+ls -a
+sudo rm -r .Trash-0/
+docker-compose up
+```
