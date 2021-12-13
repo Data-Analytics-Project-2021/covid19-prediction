@@ -2,6 +2,15 @@
 
 Models to predict covid-19 cases in India and USA
 
+Report title: *Covid-19 Forecasting with Vaccinations as a factor: the case of India and USA*
+## Team Details
+**Team No: 60**     
+**Team Name: Vanadium**     
+Team Members:
+- Vishruth Veerendranath (PES1UG19CS577)
+- Vibha Masti (PES1UG19CS565)
+- Harshith Mohan Kumar (PES1UG19CS276)
+
 ## Data sources
 
 The data were sourced from the following sources:
