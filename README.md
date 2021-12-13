@@ -29,6 +29,21 @@ The data were cleaned in our [eda repository](https://github.com/Data-Analytics-
 
 The raw sourced data are store in `raw_datasets/`.
 
+## Model Comparision 
+Models Compared:
+- ARIMA
+- GARCH (ARIMA+GARCH)
+- LSTM
+- Stacked LSTM
+- VAR
+- VARMA
+
+All the models are present in Python notebooks (`.ipynb` files) under the `/models` folder.    
+The following subfolders are present under `/models`:
+- `/lstm`
+- `/uni_timeseries` (ARIMA, ARIMA+GARCH, GARCH)
+- `/mult_timeseries` (VAR, VARMA).
+
 ## Docker
 
 ### Development
