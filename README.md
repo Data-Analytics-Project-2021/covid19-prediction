@@ -2,6 +2,15 @@
 
 Models to predict covid-19 cases in India and USA
 
+Report title: *Covid-19 Forecasting with Vaccinations as a factor: the case of India and USA*
+## Team Details
+**Team No: 60**     
+**Team Name: Vanadium**     
+Team Members:
+- Vishruth Veerendranath (PES1UG19CS577)
+- Vibha Masti (PES1UG19CS565)
+- Harshith Mohan Kumar (PES1UG19CS276)
+
 ## Data sources
 
 The data were sourced from the following sources:
@@ -19,6 +28,21 @@ The data were sourced from the following sources:
 The data were cleaned in our [eda repository](https://github.com/Data-Analytics-Project-2021/eda) and are stored under `cleaned_datasets/`.
 
 The raw sourced data are store in `raw_datasets/`.
+
+## Model Comparision 
+Models Compared:
+- ARIMA
+- GARCH (ARIMA+GARCH)
+- LSTM
+- Stacked LSTM
+- VAR
+- VARMA
+
+All the models are present in Python notebooks (`.ipynb` files) under the `/models` folder.    
+The following subfolders are present under `/models`:
+- `/lstm`
+- `/uni_timeseries` (ARIMA, ARIMA+GARCH, GARCH)
+- `/mult_timeseries` (VAR, VARMA).
 
 ## Docker
 
