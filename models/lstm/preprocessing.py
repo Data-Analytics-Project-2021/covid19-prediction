@@ -69,12 +69,21 @@ def univariate(india_cases_df, usa_cases_df):
 def multivariate(india_cases_df, india_vacc_df, usa_cases_df, usa_vacc_df):
 	# Merge datasets based on date
 	merged_india_df = pd.merge(india_cases_df, india_vacc_df, how='outer', on='Date')
+	merged_india_df.drop(['Recovered', 'Deaths'], axis=1, inplace=True)
 	print('India:\n',merged_india_df.head())
 
 	merged_usa_df = pd.merge(usa_cases_df, usa_vacc_df, how='outer', on='Date')
+	merged_usa_df.drop(['Recovered', 'Deaths'], axis=1, inplace=True)
 	print('USA:\n',merged_usa_df.head())
 
 	return (merged_india_df, merged_usa_df)
+
+def dropNull(india_multi, usa_multi):
+	india_multi = india_multi.dropna()
+	usa_multi = usa_multi.dropna()
+	print('India:\n',india_multi.head())
+	print('USA:\n',usa_multi.head())
+	return (india_multi,usa_multi)
 
 def normalize(india_cases_uni, usa_cases_uni, india_multi, usa_multi):
 	# Normalize the univariate data
@@ -94,10 +103,10 @@ def normalize(india_cases_uni, usa_cases_uni, india_multi, usa_multi):
 
 	# Normalize the multivariate data
 	india_date = india_multi[['Date']]
-	india_multi.drop(india_multi.columns[['Date']], axis=1, inplace=True)
+	india_multi.drop(['Date'], axis=1, inplace=True)
 
 	usa_date = usa_multi[["Date"]]
-	usa_multi.drop(usa_multi.columns[['Date']], axis=1, inplace=True)
+	usa_multi.drop(['Date'], axis=1, inplace=True)
 
 	india_multi_mean = india_multi.mean()
 	india_multi_std = india_multi.std()
@@ -109,21 +118,51 @@ def normalize(india_cases_uni, usa_cases_uni, india_multi, usa_multi):
 	usa_multi_normalized_df = (usa_multi-usa_multi_mean)/usa_multi_std
 
 	# Add the date column back
-	india_multi_normalized_df.join(india_date)
-	usa_multi_normalized_df.join(usa_date)
+	pd.merge(india_multi, india_date, left_index=True, right_index=True)
+	pd.merge(usa_multi, usa_date, left_index=True, right_index=True)
 
 	# Visualize the datasets
-	print('India Cases multivariate:\n',india_cases_normalized_df.head(),'\n')
-	print('USA Cases multivariate:\n',usa_cases_normalized_df.head(),'\n')
+	print('India Cases multivariate:\n',india_multi_normalized_df.head(),'\n')
+	print('USA Cases multivariate:\n',usa_multi_normalized_df.head(),'\n')
 
 	return (india_cases_normalized_df, usa_cases_normalized_df,
 		india_multi_normalized_df, usa_multi_normalized_df)
 
-def split(india, usa):
-	india_train, india_test = train_test_split(india, test_size=0.2, shuffle=False)
-	usa_train, usa_test = train_test_split(usa, test_size=0.2, shuffle=False)
+def split(india, usa, test_size):
+	india_train, india_test = train_test_split(india, test_size=test_size, shuffle=False)
+	usa_train, usa_test = train_test_split(usa, test_size=test_size, shuffle=False)
 
 	# Visualize splits
 	print('India:\n',india_train,'\n')
 	print('USA:\n',usa_train,'\n')
 	return (india_train, india_test, usa_train, usa_test)
+
+def toNumpy(india_uni_train, india_uni_test, usa_uni_train, usa_uni_test):
+	india_uni_train, india_uni_test = india_uni_train.to_numpy(), india_uni_test.to_numpy()
+	usa_uni_train, usa_uni_test = usa_uni_train.to_numpy(), usa_uni_test.to_numpy()
+	return (india_uni_train, india_uni_test, usa_uni_train, usa_uni_test)
+
+def lstm_data_transform(x_data, y_data, num_steps=5):
+	""" Changes data to the format for LSTM training 
+		for sliding window approach.
+	"""
+	# Prepare the list for the transformed data
+	X, y = list(), list()
+	# Loop of the entire data set
+	for i in range(x_data.shape[0]):
+		# compute a new (sliding window) index
+		end_ix = i + num_steps
+		# if index is larger than the size of the dataset, we stop
+		if end_ix >= x_data.shape[0]:
+		    break
+		# Get a sequence of data for x
+		seq_X = x_data[i:end_ix]
+		# Get only the last element of the sequency for y
+		seq_y = y_data[end_ix]
+		# Append the list with sequencies
+		X.append(seq_X)
+		y.append(seq_y)
+	# Make final arrays
+	x_array = np.array(X)
+	y_array = np.array(y)
+	return x_array, y_array
