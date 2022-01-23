@@ -120,7 +120,6 @@ def normalize(india_cases_uni, usa_cases_uni, india_multi, usa_multi):
 	# Add the date column back
 	pd.merge(india_multi, india_date, left_index=True, right_index=True)
 	pd.merge(usa_multi, usa_date, left_index=True, right_index=True)
- dataset2
 	# Visualize the datasets
 	print('India Cases multivariate:\n',india_multi_normalized_df.head(),'\n')
 	print('USA Cases multivariate:\n',usa_multi_normalized_df.head(),'\n')
