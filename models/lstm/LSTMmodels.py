@@ -25,3 +25,8 @@ def build_lstm(time_steps, features, nprams=100, activation='relu', optimizer='a
 	model.compile(optimizer=optimizer,loss=loss, metrics=metrics)
 	model.summary()
 	return model
+
+def train_model(model,train_X,train_y,tensorboard_callback,epochs=300):
+	model.fit(train_X,train_y,epochs=epochs,callbacks=[tensorboard_callback])
+	return model
+
