@@ -18,9 +18,10 @@ from keras.wrappers.scikit_learn import KerasRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
 
-def build_lstm(time_steps, features, nprams=100, activation='relu', optimizer='adam', loss='mae', metrics=['mae']):
+def build_lstm(time_steps, features, nprams=100, outputs=1, activation='relu', optimizer='adam', loss='mae', metrics=['mae']):
 	model = Sequential()
 	model.add(LSTM(nprams, activation=activation, input_shape=(time_steps, features)))
+	model.add(Dense(20, activation=activation))
 	model.add(Dense(1))
 	model.compile(optimizer=optimizer,loss=loss, metrics=metrics)
 	model.summary()
@@ -29,6 +30,14 @@ def build_lstm(time_steps, features, nprams=100, activation='relu', optimizer='a
 def train_model(model,train_X,train_y,tensorboard_callback,epochs=300):
 	model.fit(train_X,train_y,epochs=epochs,callbacks=[tensorboard_callback])
 	return model
+
+def plot_accuracy(history):
+	plt.plot(history.history['accuracy'])
+	plt.title('model accuracy')
+	plt.ylabel('accuracy')
+	plt.xlabel('epoch')
+	plt.legend(['train', 'test'], loc='upper left')
+	plt.show()
 
 '''
 GRID SEARCH CODE
