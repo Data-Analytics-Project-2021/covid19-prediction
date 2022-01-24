@@ -5,11 +5,16 @@ This python script evaluates the trained LSTM networks
 '''
 import tensorflow as tf
 import numpy as np
+from tensorflow.keras.losses import MeanAbsolutePercentageError, MeanAbsoluteError
+from tensorflow.keras.metrics import RootMeanSquaredError
 
-def make_predictions(model, test_X, timesteps,features):
+def make_predictions(model, test_X, timesteps,features,days=None):
 	print("hello")
 	X_data = test_X[0:timesteps]
-	itr = test_X.size-timesteps
+	if days==None:
+		itr = test_X.size-timesteps
+	else:
+		itr=days
 	print("itr size:",itr)
 	X_data = X_data.reshape(1,timesteps,features)
 	print("X_data shape",X_data.shape)
@@ -24,3 +29,12 @@ def make_predictions(model, test_X, timesteps,features):
 		print("In loop:",X_data)
 		itr-=1
 	return X_data
+
+def evaluate(y, y_hat):
+	mape = MeanAbsolutePercentageError()
+	mape_res = mape(y, y_hat).numpy()
+	mae = MeanAbsoluteError()
+	mae_res = mae(y, y_hat).numpy()
+	rmse = RootMeanSquaredError()
+	rmse_res = rmse(y,y_hat).numpy()
+	return [mape_res, mae_res, rmse_res]
