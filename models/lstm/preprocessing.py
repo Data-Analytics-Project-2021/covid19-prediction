@@ -125,7 +125,13 @@ def normalize(india_cases_uni, usa_cases_uni, india_multi, usa_multi):
 	print('USA Cases multivariate:\n',usa_multi_normalized_df.head(),'\n')
 
 	return (india_cases_normalized_df, usa_cases_normalized_df,
-		india_multi_normalized_df, usa_multi_normalized_df)
+		india_multi_normalized_df, usa_multi_normalized_df,india_cases_mean,india_cases_std,usa_cases_mean,
+		usa_cases_std,india_multi_mean,india_multi_std,
+		usa_multi_std)
+
+def de_normalize(data,mean,std):
+	denormalized_d = data*std+mean
+	return denormalized_d
 
 def split(india, usa, test_size):
 	india_train, india_test = train_test_split(india, test_size=test_size, shuffle=False)
