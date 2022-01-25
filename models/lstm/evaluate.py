@@ -9,6 +9,7 @@ import numpy as np
 from tensorflow.keras.losses import MeanAbsolutePercentageError, MeanAbsoluteError
 from tensorflow.keras.metrics import RootMeanSquaredError
 import preprocessing
+import LSTMmodels
 
 def make_predictions(model, test_X, timesteps,features,days=None):	
 	X_data = test_X[0:timesteps]
@@ -23,9 +24,23 @@ def make_predictions(model, test_X, timesteps,features,days=None):
 		itr-=1
 	return X_data
 
-def make_predictions_short(model, test_X, timesteps,features,days=None):
-	X_data, y_data = preprocessing.lstm_data_transform(test_X,test_X,timesteps)
-	forecast = model.predict(X_data)
+def make_predictions_short(model, train, test, timesteps,features,days=None,epochs=10):
+	# TODO: delete test split, add 1 to train and resplit in loop
+	X_test_data, y_test_data = preprocessing.lstm_data_transform(test,test,features)
+	X_train_data, y_train_data = preprocessing.lstm_data_transform(train,train,features)	
+	
+	if days==None:
+		itr=test_X.size-timesteps
+	forecast=[]
+	for i in itr:
+		X_train_data.append(X_test_data[0])
+		y_train_data.append(y_test_data[0])
+
+		model = LSTMmodels.train_model(model,X_train_data,y_train_data,epochs=epochs)
+
+
+		forecast[i] = model.predict(X_test_data[0])
+
 	return forecast, y_data
 
 def evaluate(y, y_hat):
