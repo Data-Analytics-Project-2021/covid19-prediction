@@ -26,7 +26,7 @@ def ingestion():
 	india_cases_path = os.path.join(parentDir, "../cleaned_datasets/india/daily_cases_india.csv")
 	india_vacc_path = os.path.join(parentDir, "../cleaned_datasets/india/daily_vacc_india.csv")
 	usa_cases_path = os.path.join(parentDir, "../cleaned_datasets/usa/daily_cases_usa.csv")
-	usa_vacc_path = os.path.join(parentDir, "../cleaned_datasets/usa/vacc_usa.csv")
+	usa_vacc_path = os.path.join(parentDir, "../cleaned_datasets/usa/daily_vacc_usa.csv")
 
 	# Quick check to make sure the path exists
 	print("Path:", india_cases_path)
