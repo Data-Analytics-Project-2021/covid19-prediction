@@ -30,7 +30,7 @@ def make_predictions_short(model, train, test, timesteps,features,tensorboard_ca
 	temp_train = train
 	# print(temp_train)
 	if days==None:
-		itr=test.size-timesteps
+		itr=test.size
 
 	forecast=[]
 	y_data=np.array([])
