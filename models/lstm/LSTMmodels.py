@@ -22,7 +22,7 @@ def build_lstm(time_steps, features, nprams=100, outputs=1, activation='relu', o
 	model = Sequential()
 	model.add(LSTM(nprams, activation=activation, input_shape=(time_steps, features)))
 	model.add(Dense(20, activation=activation))
-	model.add(Dense(1))
+	model.add(Dense(outputs))
 	model.compile(optimizer=optimizer,loss=loss, metrics=metrics)
 	model.summary()
 	return model

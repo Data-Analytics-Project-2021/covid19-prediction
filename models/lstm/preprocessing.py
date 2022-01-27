@@ -127,7 +127,7 @@ def normalize(india_cases_uni, usa_cases_uni, india_multi, usa_multi):
 	return (india_cases_normalized_df, usa_cases_normalized_df,
 		india_multi_normalized_df, usa_multi_normalized_df,india_cases_mean,india_cases_std,usa_cases_mean,
 		usa_cases_std,india_multi_mean,india_multi_std,
-		usa_multi_std)
+		usa_multi_mean, usa_multi_std)
 
 def de_normalize(data,mean,std):
 	denormalized_d = data*std+mean
