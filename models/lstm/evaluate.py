@@ -24,24 +24,30 @@ def make_predictions(model, test_X, timesteps,features,days=None):
 		itr-=1
 	return X_data
 
-def make_predictions_short(model, train, test, timesteps,features,days=None,epochs=10):
+def make_predictions_short(model, train, test, timesteps,features,tensorboard_callback,days=None,epochs=10):
 	# TODO: delete test split, add 1 to train and resplit in loop
-	X_test_data, y_test_data = preprocessing.lstm_data_transform(test,test,features)
-	X_train_data, y_train_data = preprocessing.lstm_data_transform(train,train,features)	
 	
+	temp_train = train
+	# print(temp_train)
 	if days==None:
-		itr=test_X.size-timesteps
+		itr=test.size-timesteps
+
 	forecast=[]
-	for i in itr:
-		X_train_data.append(X_test_data[0])
-		y_train_data.append(y_test_data[0])
+	y_data=np.array([])
+	print("y_data",y_data)
+	for i in range(0,itr):
+		# print(test[i])
+		temp_train=np.append(temp_train,[test[i]],axis=0)
+		print(temp_train.flatten()[-1])
+		y_data = np.append(y_data,temp_train[-1],axis=0)
+		# print(temp_train)
+		X_train, y_train = preprocessing.lstm_data_transform(temp_train,temp_train,timesteps)
+		if(i%14==0):
+			model = LSTMmodels.train_model(model,X_train,y_train,tensorboard_callback,epochs=epochs)
+		print(temp_train[-15:-1])
+		forecast.append(model.predict(temp_train[-15:-1].reshape(1,timesteps,features)))
 
-		model = LSTMmodels.train_model(model,X_train_data,y_train_data,epochs=epochs)
-
-
-		forecast[i] = model.predict(X_test_data[0])
-
-	return forecast, y_data
+	return forecast, y_data, model
 
 def evaluate(y, y_hat):
 	mape = MeanAbsolutePercentageError()
