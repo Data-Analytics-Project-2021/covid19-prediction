@@ -1,0 +1,246 @@
+iso_code,entity,year,population,source
+AFG,Afghanistan,2021,39835428,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_AFR,Africa,2021,1373486472,https://population.un.org/wpp/Download/Standard/CSV/
+ALB,Albania,2021,2872934,https://population.un.org/wpp/Download/Standard/CSV/
+DZA,Algeria,2021,44616626,https://population.un.org/wpp/Download/Standard/CSV/
+ASM,American Samoa,2021,55103,https://population.un.org/wpp/Download/Standard/CSV/
+AND,Andorra,2021,77354,https://population.un.org/wpp/Download/Standard/CSV/
+AGO,Angola,2021,33933611,https://population.un.org/wpp/Download/Standard/CSV/
+AIA,Anguilla,2021,15125,https://population.un.org/wpp/Download/Standard/CSV/
+ATG,Antigua and Barbuda,2021,98728,https://population.un.org/wpp/Download/Standard/CSV/
+ARG,Argentina,2021,45605823,https://population.un.org/wpp/Download/Standard/CSV/
+ARM,Armenia,2021,2968128,https://population.un.org/wpp/Download/Standard/CSV/
+ABW,Aruba,2021,107195,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_ASI,Asia,2021,4678444992,https://population.un.org/wpp/Download/Standard/CSV/
+AUS,Australia,2021,25788217,https://population.un.org/wpp/Download/Standard/CSV/
+AUT,Austria,2021,9043072,https://population.un.org/wpp/Download/Standard/CSV/
+AZE,Azerbaijan,2021,10223344,https://population.un.org/wpp/Download/Standard/CSV/
+BHS,Bahamas,2021,396914,https://population.un.org/wpp/Download/Standard/CSV/
+BHR,Bahrain,2021,1748295,https://population.un.org/wpp/Download/Standard/CSV/
+BGD,Bangladesh,2021,166303494,https://population.un.org/wpp/Download/Standard/CSV/
+BRB,Barbados,2021,287708,https://population.un.org/wpp/Download/Standard/CSV/
+BLR,Belarus,2021,9442867,https://population.un.org/wpp/Download/Standard/CSV/
+BEL,Belgium,2021,11632334,https://population.un.org/wpp/Download/Standard/CSV/
+BLZ,Belize,2021,404915,https://population.un.org/wpp/Download/Standard/CSV/
+BEN,Benin,2021,12451031,https://population.un.org/wpp/Download/Standard/CSV/
+BMU,Bermuda,2021,62092,https://population.un.org/wpp/Download/Standard/CSV/
+BTN,Bhutan,2021,779900,https://population.un.org/wpp/Download/Standard/CSV/
+BOL,Bolivia,2021,11832936,https://population.un.org/wpp/Download/Standard/CSV/
+BES,Bonaire Sint Eustatius and Saba,2021,26445,https://population.un.org/wpp/Download/Standard/CSV/
+BIH,Bosnia and Herzegovina,2021,3263459,https://population.un.org/wpp/Download/Standard/CSV/
+BWA,Botswana,2021,2397240,https://population.un.org/wpp/Download/Standard/CSV/
+BRA,Brazil,2021,213993441,https://population.un.org/wpp/Download/Standard/CSV/
+VGB,British Virgin Islands,2021,30423,https://population.un.org/wpp/Download/Standard/CSV/
+BRN,Brunei,2021,441532,https://population.un.org/wpp/Download/Standard/CSV/
+BGR,Bulgaria,2021,6896655,https://population.un.org/wpp/Download/Standard/CSV/
+BFA,Burkina Faso,2021,21497097,https://population.un.org/wpp/Download/Standard/CSV/
+BDI,Burundi,2021,12255429,https://population.un.org/wpp/Download/Standard/CSV/
+KHM,Cambodia,2021,16946446,https://population.un.org/wpp/Download/Standard/CSV/
+CMR,Cameroon,2021,27224262,https://population.un.org/wpp/Download/Standard/CSV/
+CAN,Canada,2021,38067913,https://population.un.org/wpp/Download/Standard/CSV/
+CPV,Cape Verde,2021,561901,https://population.un.org/wpp/Download/Standard/CSV/
+CYM,Cayman Islands,2021,66498,https://population.un.org/wpp/Download/Standard/CSV/
+CAF,Central African Republic,2021,4919987,https://population.un.org/wpp/Download/Standard/CSV/
+TCD,Chad,2021,16914985,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_CIS,Channel Islands,2021,175244,https://population.un.org/wpp/Download/Standard/CSV/
+CHL,Chile,2021,19212362,https://population.un.org/wpp/Download/Standard/CSV/
+CHN,China,2021,1444216102,https://population.un.org/wpp/Download/Standard/CSV/
+COL,Colombia,2021,51265841,https://population.un.org/wpp/Download/Standard/CSV/
+COM,Comoros,2021,888456,https://population.un.org/wpp/Download/Standard/CSV/
+COG,Congo,2021,5657017,https://population.un.org/wpp/Download/Standard/CSV/
+COK,Cook Islands,2021,17572,https://population.un.org/wpp/Download/Standard/CSV/
+CRI,Costa Rica,2021,5139053,https://population.un.org/wpp/Download/Standard/CSV/
+CIV,Cote d'Ivoire,2021,27053629,https://population.un.org/wpp/Download/Standard/CSV/
+HRV,Croatia,2021,4081657,https://population.un.org/wpp/Download/Standard/CSV/
+CUB,Cuba,2021,11317498,https://population.un.org/wpp/Download/Standard/CSV/
+CUW,Curacao,2021,164796,https://population.un.org/wpp/Download/Standard/CSV/
+CYP,Cyprus,2021,896005,https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en
+CZE,Czechia,2021,10724553,https://population.un.org/wpp/Download/Standard/CSV/
+COD,Democratic Republic of Congo,2021,92377986,https://population.un.org/wpp/Download/Standard/CSV/
+DNK,Denmark,2021,5813302,https://population.un.org/wpp/Download/Standard/CSV/
+DJI,Djibouti,2021,1002197,https://population.un.org/wpp/Download/Standard/CSV/
+DMA,Dominica,2021,72172,https://population.un.org/wpp/Download/Standard/CSV/
+DOM,Dominican Republic,2021,10953714,https://population.un.org/wpp/Download/Standard/CSV/
+ECU,Ecuador,2021,17888474,https://population.un.org/wpp/Download/Standard/CSV/
+EGY,Egypt,2021,104258327,https://population.un.org/wpp/Download/Standard/CSV/
+SLV,El Salvador,2021,6518500,https://population.un.org/wpp/Download/Standard/CSV/
+GNQ,Equatorial Guinea,2021,1449891,https://population.un.org/wpp/Download/Standard/CSV/
+ERI,Eritrea,2021,3601462,https://population.un.org/wpp/Download/Standard/CSV/
+EST,Estonia,2021,1325188,https://population.un.org/wpp/Download/Standard/CSV/
+SWZ,Eswatini,2021,1172369,https://population.un.org/wpp/Download/Standard/CSV/
+ETH,Ethiopia,2021,117876226,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_EUR,Europe,2021,748962983,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_EUN,European Union,2021,447189915,https://population.un.org/wpp/Download/Standard/CSV/
+FRO,Faeroe Islands,2021,49053,https://population.un.org/wpp/Download/Standard/CSV/
+FLK,Falkland Islands,2021,3528,https://population.un.org/wpp/Download/Standard/CSV/
+FJI,Fiji,2021,902899,https://population.un.org/wpp/Download/Standard/CSV/
+FIN,Finland,2021,5548361,https://population.un.org/wpp/Download/Standard/CSV/
+FRA,France,2021,67422000,https://www.insee.fr/fr/statistiques/5012724
+PYF,French Polynesia,2021,282534,https://population.un.org/wpp/Download/Standard/CSV/
+GAB,Gabon,2021,2278829,https://population.un.org/wpp/Download/Standard/CSV/
+GMB,Gambia,2021,2486937,https://population.un.org/wpp/Download/Standard/CSV/
+GEO,Georgia,2021,3979773,https://population.un.org/wpp/Download/Standard/CSV/
+DEU,Germany,2021,83900471,https://population.un.org/wpp/Download/Standard/CSV/
+GHA,Ghana,2021,31732128,https://population.un.org/wpp/Download/Standard/CSV/
+GIB,Gibraltar,2021,33691,https://population.un.org/wpp/Download/Standard/CSV/
+GRC,Greece,2021,10370747,https://population.un.org/wpp/Download/Standard/CSV/
+GRL,Greenland,2021,56868,https://population.un.org/wpp/Download/Standard/CSV/
+GRD,Grenada,2021,113015,https://population.un.org/wpp/Download/Standard/CSV/
+GUM,Guam,2021,170184,https://population.un.org/wpp/Download/Standard/CSV/
+GTM,Guatemala,2021,18249868,https://population.un.org/wpp/Download/Standard/CSV/
+GGY,Guernsey,2021,63385,https://www.gov.gg/population
+GIN,Guinea,2021,13497237,https://population.un.org/wpp/Download/Standard/CSV/
+GNB,Guinea-Bissau,2021,2015490,https://population.un.org/wpp/Download/Standard/CSV/
+GUY,Guyana,2021,790329,https://population.un.org/wpp/Download/Standard/CSV/
+HTI,Haiti,2021,11541683,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_HIC,High income,2021,1214930230,https://data.worldbank.org/indicator/SP.POP.TOTL?locations=XM-XD-XT-XN
+HND,Honduras,2021,10062994,https://population.un.org/wpp/Download/Standard/CSV/
+HKG,Hong Kong,2021,7552800,https://population.un.org/wpp/Download/Standard/CSV/
+HUN,Hungary,2021,9634162,https://population.un.org/wpp/Download/Standard/CSV/
+ISL,Iceland,2021,368792,https://www.statice.is/publications/news-archive/inhabitants/the-population-on-january-1st-2021/
+IND,India,2021,1393409033,https://population.un.org/wpp/Download/Standard/CSV/
+IDN,Indonesia,2021,276361788,https://population.un.org/wpp/Download/Standard/CSV/
+IRN,Iran,2021,85028760,https://population.un.org/wpp/Download/Standard/CSV/
+IRQ,Iraq,2021,41179351,https://population.un.org/wpp/Download/Standard/CSV/
+IRL,Ireland,2021,4982904,https://population.un.org/wpp/Download/Standard/CSV/
+IMN,Isle of Man,2021,85410,https://population.un.org/wpp/Download/Standard/CSV/
+ISR,Israel,2021,9291000,https://www.cbs.gov.il/en/mediarelease/Pages/2020/Population-of-Israel-on-the-Eve-of-2021.aspx
+ITA,Italy,2021,60367471,https://population.un.org/wpp/Download/Standard/CSV/
+JAM,Jamaica,2021,2973462,https://population.un.org/wpp/Download/Standard/CSV/
+JPN,Japan,2021,126050796,https://population.un.org/wpp/Download/Standard/CSV/
+JEY,Jersey,2021,101073,https://population.un.org/wpp/Download/Standard/CSV/
+JOR,Jordan,2021,10269022,https://population.un.org/wpp/Download/Standard/CSV/
+KAZ,Kazakhstan,2021,18994958,https://population.un.org/wpp/Download/Standard/CSV/
+KEN,Kenya,2021,54985702,https://population.un.org/wpp/Download/Standard/CSV/
+KIR,Kiribati,2021,121388,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_KOS,Kosovo,2021,1782115,https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en
+KWT,Kuwait,2021,4328553,https://population.un.org/wpp/Download/Standard/CSV/
+KGZ,Kyrgyzstan,2021,6628347,https://population.un.org/wpp/Download/Standard/CSV/
+LAO,Laos,2021,7379358,https://population.un.org/wpp/Download/Standard/CSV/
+LVA,Latvia,2021,1866934,https://population.un.org/wpp/Download/Standard/CSV/
+LBN,Lebanon,2021,6769151,https://population.un.org/wpp/Download/Standard/CSV/
+LSO,Lesotho,2021,2159067,https://population.un.org/wpp/Download/Standard/CSV/
+LBR,Liberia,2021,5180208,https://population.un.org/wpp/Download/Standard/CSV/
+LBY,Libya,2021,6958538,https://population.un.org/wpp/Download/Standard/CSV/
+LIE,Liechtenstein,2021,38254,https://population.un.org/wpp/Download/Standard/CSV/
+LTU,Lithuania,2021,2689862,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_LIC,Low income,2021,665149040,https://data.worldbank.org/indicator/SP.POP.TOTL?locations=XM-XD-XT-XN
+OWID_LMC,Lower middle income,2021,3330652550,https://data.worldbank.org/indicator/SP.POP.TOTL?locations=XM-XD-XT-XN
+LUX,Luxembourg,2021,634814,https://population.un.org/wpp/Download/Standard/CSV/
+MAC,Macao,2021,658391,https://population.un.org/wpp/Download/Standard/CSV/
+MDG,Madagascar,2021,28427333,https://population.un.org/wpp/Download/Standard/CSV/
+MWI,Malawi,2021,19647681,https://population.un.org/wpp/Download/Standard/CSV/
+MYS,Malaysia,2021,32776195,https://population.un.org/wpp/Download/Standard/CSV/
+MDV,Maldives,2021,543620,https://population.un.org/wpp/Download/Standard/CSV/
+MLI,Mali,2021,20855724,https://population.un.org/wpp/Download/Standard/CSV/
+MLT,Malta,2021,516100,https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en
+MHL,Marshall Islands,2021,59618,https://population.un.org/wpp/Download/Standard/CSV/
+MRT,Mauritania,2021,4775110,https://population.un.org/wpp/Download/Standard/CSV/
+MUS,Mauritius,2021,1273428,https://population.un.org/wpp/Download/Standard/CSV/
+MEX,Mexico,2021,130262220,https://population.un.org/wpp/Download/Standard/CSV/
+FSM,Micronesia (country),2021,116255,https://population.un.org/wpp/Download/Standard/CSV/
+MDA,Moldova,2021,4024025,https://population.un.org/wpp/Download/Standard/CSV/
+MCO,Monaco,2021,39520,https://population.un.org/wpp/Download/Standard/CSV/
+MNG,Mongolia,2021,3329282,https://population.un.org/wpp/Download/Standard/CSV/
+MNE,Montenegro,2021,628051,https://population.un.org/wpp/Download/Standard/CSV/
+MSR,Montserrat,2021,4981,https://population.un.org/wpp/Download/Standard/CSV/
+MAR,Morocco,2021,37344787,https://population.un.org/wpp/Download/Standard/CSV/
+MOZ,Mozambique,2021,32163045,https://population.un.org/wpp/Download/Standard/CSV/
+MMR,Myanmar,2021,54806014,https://population.un.org/wpp/Download/Standard/CSV/
+NAM,Namibia,2021,2587344,https://population.un.org/wpp/Download/Standard/CSV/
+NRU,Nauru,2021,10873,https://population.un.org/wpp/Download/Standard/CSV/
+NPL,Nepal,2021,29674920,https://population.un.org/wpp/Download/Standard/CSV/
+NLD,Netherlands,2021,17173094,https://population.un.org/wpp/Download/Standard/CSV/
+NCL,New Caledonia,2021,288217,https://population.un.org/wpp/Download/Standard/CSV/
+NZL,New Zealand,2021,5126300,https://www.stats.govt.nz/indicators/population-of-nz
+NIC,Nicaragua,2021,6702379,https://population.un.org/wpp/Download/Standard/CSV/
+NER,Niger,2021,25130810,https://population.un.org/wpp/Download/Standard/CSV/
+NGA,Nigeria,2021,211400704,https://population.un.org/wpp/Download/Standard/CSV/
+NIU,Niue,2021,1614,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_NAM,North America,2021,596581283,https://population.un.org/wpp/Download/Standard/CSV/
+PRK,North Korea,2021,25887045,https://population.un.org/wpp/Download/Standard/CSV/
+MKD,North Macedonia,2021,2082661,https://population.un.org/wpp/Download/Standard/CSV/
+MNP,Northern Mariana Islands,2021,57910,https://population.un.org/wpp/Download/Standard/CSV/
+NOR,Norway,2021,5465629,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_OCE,Oceania,2021,43219954,https://population.un.org/wpp/Download/Standard/CSV/
+OMN,Oman,2021,5223376,https://population.un.org/wpp/Download/Standard/CSV/
+PAK,Pakistan,2021,225199929,https://population.un.org/wpp/Download/Standard/CSV/
+PLW,Palau,2021,18174,https://population.un.org/wpp/Download/Standard/CSV/
+PSE,Palestine,2021,5222756,https://population.un.org/wpp/Download/Standard/CSV/
+PAN,Panama,2021,4381583,https://population.un.org/wpp/Download/Standard/CSV/
+PNG,Papua New Guinea,2021,9119005,https://population.un.org/wpp/Download/Standard/CSV/
+PRY,Paraguay,2021,7219641,https://population.un.org/wpp/Download/Standard/CSV/
+PER,Peru,2021,33359415,https://population.un.org/wpp/Download/Standard/CSV/
+PHL,Philippines,2021,111046910,https://population.un.org/wpp/Download/Standard/CSV/
+PCN,Pitcairn,2021,47,https://www.bbc.com/news/uk-56923016
+POL,Poland,2021,37797000,https://population.un.org/wpp/Download/Standard/CSV/
+PRT,Portugal,2021,10167923,https://population.un.org/wpp/Download/Standard/CSV/
+PRI,Puerto Rico,2021,2828246,https://population.un.org/wpp/Download/Standard/CSV/
+QAT,Qatar,2021,2930524,https://population.un.org/wpp/Download/Standard/CSV/
+ROU,Romania,2021,19127772,https://population.un.org/wpp/Download/Standard/CSV/
+RUS,Russia,2021,145912022,https://population.un.org/wpp/Download/Standard/CSV/
+RWA,Rwanda,2021,13276517,https://population.un.org/wpp/Download/Standard/CSV/
+SHN,Saint Helena,2021,6095,https://population.un.org/wpp/Download/Standard/CSV/
+KNA,Saint Kitts and Nevis,2021,53546,https://population.un.org/wpp/Download/Standard/CSV/
+LCA,Saint Lucia,2021,184401,https://population.un.org/wpp/Download/Standard/CSV/
+SPM,Saint Pierre and Miquelon,2021,5771,https://population.un.org/wpp/Download/Standard/CSV/
+VCT,Saint Vincent and the Grenadines,2021,111269,https://population.un.org/wpp/Download/Standard/CSV/
+WSM,Samoa,2021,200144,https://population.un.org/wpp/Download/Standard/CSV/
+SMR,San Marino,2021,34010,https://population.un.org/wpp/Download/Standard/CSV/
+STP,Sao Tome and Principe,2021,223364,https://population.un.org/wpp/Download/Standard/CSV/
+SAU,Saudi Arabia,2021,35340680,https://population.un.org/wpp/Download/Standard/CSV/
+SEN,Senegal,2021,17196308,https://population.un.org/wpp/Download/Standard/CSV/
+SRB,Serbia,2021,6871547,https://ec.europa.eu/eurostat/databrowser/view/tps00001/default/table?lang=en
+SYC,Seychelles,2021,98910,https://population.un.org/wpp/Download/Standard/CSV/
+SLE,Sierra Leone,2021,8141343,https://population.un.org/wpp/Download/Standard/CSV/
+SGP,Singapore,2021,5453600,https://www.singstat.gov.sg/find-data/search-by-theme/population/population-and-population-structure/latest-data
+SXM,Sint Maarten (Dutch part),2021,43421,https://population.un.org/wpp/Download/Standard/CSV/
+SVK,Slovakia,2021,5449270,https://www.scitanie.sk/en
+SVN,Slovenia,2021,2078723,https://population.un.org/wpp/Download/Standard/CSV/
+SLB,Solomon Islands,2021,703995,https://population.un.org/wpp/Download/Standard/CSV/
+SOM,Somalia,2021,16359500,https://population.un.org/wpp/Download/Standard/CSV/
+ZAF,South Africa,2021,60041996,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_SAM,South America,2021,434260137,https://population.un.org/wpp/Download/Standard/CSV/
+KOR,South Korea,2021,51305184,https://population.un.org/wpp/Download/Standard/CSV/
+SSD,South Sudan,2021,11381377,https://population.un.org/wpp/Download/Standard/CSV/
+ESP,Spain,2021,46745211,https://population.un.org/wpp/Download/Standard/CSV/
+LKA,Sri Lanka,2021,21497306,https://population.un.org/wpp/Download/Standard/CSV/
+SDN,Sudan,2021,44909351,https://population.un.org/wpp/Download/Standard/CSV/
+SUR,Suriname,2021,591798,https://population.un.org/wpp/Download/Standard/CSV/
+SWE,Sweden,2021,10160159,https://population.un.org/wpp/Download/Standard/CSV/
+CHE,Switzerland,2021,8715494,https://population.un.org/wpp/Download/Standard/CSV/
+SYR,Syria,2021,18275704,https://population.un.org/wpp/Download/Standard/CSV/
+TWN,Taiwan,2021,23855008,https://population.un.org/wpp/Download/Standard/CSV/
+TJK,Tajikistan,2021,9749625,https://population.un.org/wpp/Download/Standard/CSV/
+TZA,Tanzania,2021,61498438,https://population.un.org/wpp/Download/Standard/CSV/
+THA,Thailand,2021,69950844,https://population.un.org/wpp/Download/Standard/CSV/
+TLS,Timor,2021,1343875,https://population.un.org/wpp/Download/Standard/CSV/
+TGO,Togo,2021,8478242,https://population.un.org/wpp/Download/Standard/CSV/
+TKL,Tokelau,2021,1368,https://population.un.org/wpp/Download/Standard/CSV/
+TON,Tonga,2021,106759,https://population.un.org/wpp/Download/Standard/CSV/
+TTO,Trinidad and Tobago,2021,1403374,https://population.un.org/wpp/Download/Standard/CSV/
+TUN,Tunisia,2021,11935764,https://population.un.org/wpp/Download/Standard/CSV/
+TUR,Turkey,2021,85042736,https://population.un.org/wpp/Download/Standard/CSV/
+TKM,Turkmenistan,2021,6117933,https://population.un.org/wpp/Download/Standard/CSV/
+TCA,Turks and Caicos Islands,2021,39226,https://population.un.org/wpp/Download/Standard/CSV/
+TUV,Tuvalu,2021,11925,https://population.un.org/wpp/Download/Standard/CSV/
+UGA,Uganda,2021,47123533,https://population.un.org/wpp/Download/Standard/CSV/
+UKR,Ukraine,2021,43466822,https://population.un.org/wpp/Download/Standard/CSV/
+ARE,United Arab Emirates,2021,9991083,https://population.un.org/wpp/Download/Standard/CSV/
+GBR,United Kingdom,2021,68207114,https://population.un.org/wpp/Download/Standard/CSV/
+USA,United States,2021,332915074,https://population.un.org/wpp/Download/Standard/CSV/
+VIR,United States Virgin Islands,2021,104218,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_UMC,Upper middle income,2021,2513672790,https://data.worldbank.org/indicator/SP.POP.TOTL?locations=XM-XD-XT-XN
+URY,Uruguay,2021,3485152,https://population.un.org/wpp/Download/Standard/CSV/
+UZB,Uzbekistan,2021,33935765,https://population.un.org/wpp/Download/Standard/CSV/
+VUT,Vanuatu,2021,314464,https://population.un.org/wpp/Download/Standard/CSV/
+VAT,Vatican,2021,812,https://population.un.org/wpp/Download/Standard/CSV/
+VEN,Venezuela,2021,28704947,https://population.un.org/wpp/Download/Standard/CSV/
+VNM,Vietnam,2021,98168829,https://population.un.org/wpp/Download/Standard/CSV/
+WLF,Wallis and Futuna,2021,11094,https://population.un.org/wpp/Download/Standard/CSV/
+ESH,Western Sahara,2021,611872,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_WRL,World,2021,7874965730,https://population.un.org/wpp/Download/Standard/CSV/
+OWID_WEC,World excl. China,2021,6430749628,https://population.un.org/wpp/Download/Standard/CSV/
+YEM,Yemen,2021,30490639,https://population.un.org/wpp/Download/Standard/CSV/
+ZMB,Zambia,2021,18920657,https://population.un.org/wpp/Download/Standard/CSV/
+ZWE,Zimbabwe,2021,15092171,https://population.un.org/wpp/Download/Standard/CSV/
