@@ -61,7 +61,7 @@ docker-compose up
 2. Next use the following command to start up the dev docker container.
 
 ```
-docker run --gpus all -it --rm -p 8888:8888 -v $PWD:/covid19-prediction covid19-prediction_dev
+docker run --gpus all -it --rm -p 8888:8888 -p 6006:6006 -v $PWD:/covid19-prediction covid19-prediction_dev
 ```
 
 #### Jupyter Notebook
