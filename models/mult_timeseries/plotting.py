@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import pandas as pd
 
 
@@ -6,6 +7,11 @@ def plot_train_test_fore(*, train, test, fore, conf=None, title='Forecast vs Act
     """
     Plot train, test, forecasted values
     """
+
+    # Set the locator
+    locator = mdates.MonthLocator(interval=2)  # every 2 months
+    # Specify the format - %b gives us Jan, Feb...
+    fmt = mdates.DateFormatter('%b-%y')
 
     # Confidence of cases
     if conf is not None:
@@ -15,21 +21,26 @@ def plot_train_test_fore(*, train, test, fore, conf=None, title='Forecast vs Act
 
     plt.figure(figsize=(5,5), dpi=100)
 
-    # train.loc[start_date:].plot(label='training', color='k')
-    # test.plot(label='testing', color='b')
-    # fore.plot(label='forecast', color='r')
 
     plt.plot(train.loc[start_date:], label='training', color='k')
     plt.plot(test, label='actual', color='b')
     plt.plot(fore, label='forecast', color='r')
 
     fig = plt.gcf()
+    x = plt.gca().xaxis
+    plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+
+    # Locate months
+    x.set_major_locator(locator)
+
+    # Specify formatter
+    x.set_major_formatter(fmt)
     
     plt.xlabel=xlabel
     plt.ylabel=ylabel
 
     plt.title(title)
-    plt.legend(loc='upper left', fontsize=8)
+    plt.legend(loc='best', fontsize=8)
     plt.show()
     
     
