@@ -36,17 +36,17 @@ def make_predictions_short(model, train, test, timesteps,features,tensorboard_ca
 
 	forecast=[]
 	y_data=np.array([])
-	print("y_data",y_data)
+	# print("y_data",y_data)
 	for i in range(0,itr):
 		# print(test[i])
 		temp_train=np.append(temp_train,[test[i]],axis=0)
-		print(temp_train.flatten()[-1])
+		# print(temp_train.flatten()[-1])
 		y_data = np.append(y_data,temp_train[-1],axis=0)
 		# print(temp_train)
 		X_train, y_train = preprocessing.lstm_data_transform(temp_train,temp_train,timesteps)
 		if(i%14==0):
 			model = LSTMmodels.train_model(model,X_train,y_train,tensorboard_callback,epochs=epochs)
-		print(temp_train[-15:-1])
+		# print(temp_train[-15:-1])
 		forecast.append(model.predict(temp_train[-15:-1].reshape(1,timesteps,features)))
 
 	return forecast, y_data, model
@@ -61,7 +61,6 @@ def evaluate(y, y_hat):
 	return [mape_res, mae_res, rmse_res]
 
 def plot_fore_test(test, fore, title):
-    
     fig, ax = plt.subplots()
     fig.set_size_inches(12, 8)
 
