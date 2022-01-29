@@ -3,7 +3,7 @@ import matplotlib.dates as mdates
 import pandas as pd
 
 
-def plot_train_test_fore(*, train, test, fore, conf=None, title='Forecast vs Actuals', ylabel='', xlabel='Date', figpath=None, start_date=None):
+def plot_train_test_fore(*, train, test, fore, conf=None, title='Forecast vs Actuals', ylabel='', xlabel='Date', figpath=None, start_date='2021-03-01'):
     """
     Plot train, test, forecasted values
     """
