@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import pandas as pd
+import matplotlib
+matplotlib.rcParams.update(matplotlib.rcParamsDefault)
 
 def plot_dataframe(df, *, title, ylabel='', xlabel='Date', figpath=None, color='k'):
     """
@@ -19,6 +21,8 @@ def plot_dataframe(df, *, title, ylabel='', xlabel='Date', figpath=None, color='
     fig = plt.gcf()
     ax = plt.gca()
     plt.ticklabel_format(axis='y', style='sci', scilimits=(0,0))
+    
+    plt.grid(True)
 
     ax.spines["top"].set_visible(True)
     ax.spines["right"].set_visible(True)
@@ -88,6 +92,7 @@ def plot_train_test_fore(*, train, test, fore, conf=None, title='Forecast vs Act
 
     plt.title(title)
     plt.legend(loc='best', fontsize=8)
+    plt.grid(linewidth=0.4)
     plt.show()
     
     
